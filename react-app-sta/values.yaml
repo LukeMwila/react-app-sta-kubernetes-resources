@@ -21,7 +21,7 @@ service:
   targetPort: 3000
 # Ingress
 ingress:
-  enabled: true
+  enabled: false
   name: react-app-sta
   namespace: default
   host: lukemwila.com
