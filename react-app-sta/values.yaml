@@ -9,7 +9,7 @@ deployment:
   containerName: react-app-sta
   imageRepository: lukondefmwila/sita-react
   imageTag: 0.1.1
-  port: 3000
+  port: 80
 # Service
 service:
   enabled: true
@@ -17,8 +17,8 @@ service:
   namespace: default
   appName: react-app-sta
   type: LoadBalancer
-  servicePort: 3000
-  targetPort: 3000
+  servicePort: 80
+  targetPort: 80
 # Ingress
 ingress:
   enabled: false
@@ -27,4 +27,4 @@ ingress:
   host: lukemwila.com
   path: "/"
   serviceName: react-app-sta-svc
-  servicePort: 3000
+  servicePort: 80
