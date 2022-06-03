@@ -8,7 +8,7 @@ deployment:
   role: frontend
   containerName: react-app-sta
   imageRepository: lukondefmwila/sita-react
-  imageTag: 0.1.0
+  imageTag: 0.1.1
   port: 3000
 # Service
 service:
