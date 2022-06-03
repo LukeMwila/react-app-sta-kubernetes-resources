@@ -1,0 +1,10 @@
+apiVersion: v2
+description: The react-app-sta helm chart
+keywords:
+  - react-app-sta
+maintainers:
+  - email: luke.mwila@suse.com
+    name: Luke Mwila
+name: react-app-sta
+appVersion: "0.1.0"
+version: 0.1.0

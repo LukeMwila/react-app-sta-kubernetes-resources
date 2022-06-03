@@ -1,0 +1,30 @@
+# Deployment
+deployment:
+  enabled: true
+  name: react-app-sta
+  namespace: default
+  replicas: 3
+  appName: react-app-sta
+  role: frontend
+  containerName: react-app-sta
+  imageRepository: lukondefmwila/sita-react
+  imageTag: 0.1.0
+  port: 3000
+# Service
+service:
+  enabled: true
+  name: react-app-sta-svc
+  namespace: default
+  appName: react-app-sta
+  type: LoadBalancer
+  servicePort: 3000
+  targetPort: 3000
+# Ingress
+ingress:
+  enabled: true
+  name: react-app-sta
+  namespace: default
+  host: lukemwila.com
+  path: "/"
+  serviceName: react-app-sta-svc
+  servicePort: 3000
